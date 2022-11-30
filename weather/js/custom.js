@@ -1,7 +1,7 @@
 $(function(){
     $(window).on('load', function(){
         $('.wrapper').css({
-            'background-image':'url(imgs/main001.jpg)'
+            'background-image':'url(imgs/main001d.jpg)'
             
         })
     })
