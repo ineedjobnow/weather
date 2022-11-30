@@ -1,0 +1,213 @@
+@import url(reset.css);
+@import url(notosans.css);
+@import url(all.css);
+@import url(slick.css);
+@import url(weather-icons.css);
+@import url(weather-icons-wind.css);
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'NotoSansKr', sans-serif;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url('../imgs/main001.jpg');
+    text-align: center;
+    overflow: auto;
+    position: relative;
+}
+.city{
+    color:#fff;
+    font-size: 2em;
+    margin:50px 0 50px 30px;
+}
+.temp{
+    font-size: 10em;
+    font-weight: bold;
+    margin-left: 30px;
+    letter-spacing: -10px;
+    background:-webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/*
+.search{
+    display: block;
+    position: absolute;
+    right: 16px;
+    top:-32px;
+    color: #000;
+    background-color: #fff;
+    padding:4px;
+    border-radius: 25%;
+}
+.searchbox{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255,255,255,0.2);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#search{
+    display: inline-block;
+    border: none;
+    text-align: center;
+    
+}
+#search:focus{
+    outline: none;
+    border: none;
+}
+.search:hover{
+    background-color: #ededed;
+}
+*/
+
+.small{
+    font-size: 0.7em;
+    vertical-align: top;
+    padding-left: 0.1em;
+}
+.container{
+    width: 100%;
+    position: relative;
+    padding-left: 0.5em;
+}
+.descript{
+    font-size: 1.5em;
+    color: #fff;
+    position:absolute;
+    transform:rotate(-90deg);
+    right:-30px;
+    top:130px;
+}
+.detail{
+    margin-top:295px;
+}
+.detail-top{
+    background-size: contain;
+    height: 50px;
+    text-align: center;
+    padding-top: 45px;
+}
+.detail-top::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ddd;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left:calc(50% - 25px);
+}
+.text-center{
+    text-align: center;
+}
+.detail-body h1{
+    padding-top:0.5em;
+    letter-spacing: 0em;
+    font-variant: small-caps;
+}
+.today-box{
+    display: flex;
+}
+.today-box ul{
+    color: #787878;
+}
+.today-box ul:first-child{
+    width: 40%;
+}
+.today-box ul:last-child{
+    width: 60%;
+}
+.today-box li{
+    padding-top:8px;
+    padding-bottom:8px;
+}
+.today-box label{
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-right: 10px;
+}
+.today-box i{
+    margin-right: 10px;
+}
+.five-day{
+    margin-top: 20px;
+}
+.three-times{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8em;
+    
+}
+.five-date{
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #000;
+    margin-bottom:5px;
+}
+.five-icon>img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+
+}
+.five-temp{
+    margin-top:0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.five-descript{
+    color: #787878;
+    margin-top:0.3em;
+}
+.searchbox{
+    position: absolute;
+    top:40px;
+    padding: 8px 40px;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.7);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius:30px;
+    transition: all 0.3s;
+    width: 350px;
+}
+.searchbox form{
+    border:1px solid #787878;
+    border-radius: 20px;
+    padding-right:20px;
+    padding-left: 16px;
+    width: 100%;
+}
+.searchbox input{
+    font-size: 1.2em;
+    padding: 5px;
+
+    border: 0;
+    background-color: transparent;
+}
+.btn{
+    position: absolute;
+    right: 10px;
+    top:56px
+}
+.btn i{
+    font-size: 1.5em;
+    vertical-align: middle;
+    z-index: 100;
+    
+    
+}
