@@ -19,12 +19,12 @@
             <div class="searchbox">
                 <input type="text" name="search" id="search" placeholder="검색">
                 
-            </div>
+            </div>-->
             <div class="city">
                 <i class="fa-solid fa-location-crosshairs"></i>
-                <span id="city">gimpo</span>
+                <span id="city"></span>
             </div>
-        -->
+        
             <h1 class="temp">
                 <span id="temp">8</span><span class="small">ºc</span>
             </h1>
@@ -35,47 +35,86 @@
             </div>
         </div>
         <div class="detail">
-            <div class="detail-top"></div>
+            <div class="detail-top">
+                <img src="imgs/back.png" alt="#"></img>
+            </div>
             <div class="detail-body">
                 <h1 class="text-center">
                     Weather Today
                 </h1>
+                <div >
+                    <span id="tempfeels"></span><span class="small">ºc</span>
+                </div>
                 <div class="today-box">
                     <ul>
-                        <li><label><i class="wi wi-direction-up"></i>최고</label></li>
-                        <li><label><i class="wi wi-direction-down"></i>최저</label></li>
-                        <li><label><i class="wi wi-humidity"></i>습도</label></li>
+                        <li>
+                            <label>
+                                <i class="wi wi-direction-up"></i>최고온도
+                            </label>
+                            <span id="tempmax"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <i class="wi wi-direction-down"></i>최저온도
+                            </label>
+                            <span id="tempmin"></span>
+                        </li>
+                         <li>
+                            <label>
+                                <i class="wi wi-windy"></i>풍속
+                            </label>
+                            <span id="wind"></span>
+                        </li>
+                       
                     </ul>
                     <ul>
-                        <li><label><i class="wi wi-sunrise"></i>해뜨는시각</label></li>
-                        <li><label><i class="wi wi-sunset"></i>해지는시각</label></li>
-                        <li><label><i class="wi wi-windy"></i>바람</label></li>
+                        <li>
+                            <label>
+                                <i class="wi wi-sunrise"></i>해뜨는시각
+                            </label>
+                                <span id="sunrise"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <i class="wi wi-sunset"></i>해지는시각
+                            </label>
+                            <span id="sunset"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <i class="wi wi-humidity"></i>습도
+                            </label>
+                            <span id="humidity"></span>
+                        </li>
                     </ul>
                 </div>
+            </div>
+            <div class="detailfoot">
                 <div class="five-day">
                     <!--------------loop------------------>
-                    <div class="three-times">
-                        <div class="five-date">15일</div>
+                   <div class="three-times">
+                        <div class="five-date">15일(수) 00시</div>
                         <div class="five-times">00시 24분</div>
                         <div class="five-icon">
                             <img src="imgs/001d.png" alt="sunny">
                         </div>
                         <p class="five-temp">
-                            sdf
+                                sdf
                         </p>
                         <p class="five-descript">
                             추워요
                         </p>
                     </div>
-                    <!--------------loop------------------>
+                        <!--------------loop------------------>
                 </div>
             </div>
+            
         </div>
         <div class="searchbox">
-            <form action="">
+            <div class="form">
                 <input type="search" name="search" id="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
+            </div>
         </div>
         <a href="#" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a>
     </div>

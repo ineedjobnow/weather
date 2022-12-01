@@ -23,12 +23,12 @@
 .city{
     color:#fff;
     font-size: 2em;
-    margin:50px 0 50px 30px;
+    margin:30px 0 50px 30px;
 }
 .temp{
-    font-size: 10em;
+    font-size: 7em;
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 0px;
     letter-spacing: -10px;
     background:-webkit-linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.2));
     -webkit-background-clip: text;
@@ -79,47 +79,65 @@
 .container{
     width: 100%;
     position: relative;
-    padding-left: 0.5em;
+    padding-left: 1em;
 }
 .descript{
     font-size: 1.5em;
     color: #fff;
     position:absolute;
     transform:rotate(-90deg);
-    right:-30px;
+    right:-150px;
     top:130px;
+    overflow: hidden;
+    
+}
+#descript{
+    width:350px;
+    text-overflow: ellipsis;
+   
 }
 .detail{
     margin-top:295px;
 }
 .detail-top{
-    background-size: contain;
-    height: 50px;
-    text-align: center;
-    padding-top: 45px;
+    position: relative;
+    
+}
+.detail-top img{
+    width: 100%;
 }
 .detail-top::after{
-    content: "";
-    display: block;
-    width: 50px;
-    height: 5px;
-    border-radius: 2.5px;
-    background: #ddd;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    content:"";
+    display:block;
+    width:50px;
+    height:5px;
+    border-radius:2.5px;
+    background:#ddd;
+    position:absolute;
     left:calc(50% - 25px);
+    z-index:100;
+    top:40px;
 }
 .text-center{
     text-align: center;
 }
+.detail-body{
+    padding-left:30px;
+    padding-right:30px;
+    background:#fff;
+    margin-top: -20px;
+    padding-top: 20px;
+}
 .detail-body h1{
-    padding-top:0.5em;
+    padding-top:0.3em;
     letter-spacing: 0em;
     font-variant: small-caps;
+    margin-bottom:0.7em;
 }
 .today-box{
-    display: flex;
+    display:flex;
+    padding-bottom:20px;
+    border-bottom:1px dashed #787878;
 }
 .today-box ul{
     color: #787878;
@@ -146,7 +164,7 @@
     margin-top: 20px;
 }
 .three-times{
-    border: 1px solid #ddd;
+    border-right: 1px solid #ddd;
     text-align: center;
     padding-left: 5px;
     padding-right: 5px;
@@ -162,7 +180,8 @@
 .five-icon>img{
     margin-left: auto;
     margin-right: auto;
-    width: 5em;
+    width: 64px;
+    height: 40px;
 
 }
 .five-temp{
@@ -183,14 +202,19 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius:30px;
     transition: all 0.3s;
-    width: 350px;
+    opacity:0;
+    width:40px;
 }
-.searchbox form{
+.searchbox .form{
     border:1px solid #787878;
     border-radius: 20px;
     padding-right:20px;
     padding-left: 16px;
     width: 100%;
+}
+#search:focus{
+    outline: none;
+    border: none;
 }
 .searchbox input{
     font-size: 1.2em;
@@ -202,7 +226,9 @@
 .btn{
     position: absolute;
     right: 10px;
-    top:56px
+    top:20px;
+    text-decoration: none;
+    color: #000;
 }
 .btn i{
     font-size: 1.5em;
